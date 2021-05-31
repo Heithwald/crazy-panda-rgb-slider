@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/crazy-panda-rgb-slider/static/css/main.4eab7ba3.chunk.css",
+    "main.js": "/crazy-panda-rgb-slider/static/js/main.ab4797f7.chunk.js",
+    "main.js.map": "/crazy-panda-rgb-slider/static/js/main.ab4797f7.chunk.js.map",
+    "runtime-main.js": "/crazy-panda-rgb-slider/static/js/runtime-main.7f475f25.js",
+    "runtime-main.js.map": "/crazy-panda-rgb-slider/static/js/runtime-main.7f475f25.js.map",
+    "static/js/2.461deea2.chunk.js": "/crazy-panda-rgb-slider/static/js/2.461deea2.chunk.js",
+    "static/js/2.461deea2.chunk.js.map": "/crazy-panda-rgb-slider/static/js/2.461deea2.chunk.js.map",
+    "static/js/3.50524956.chunk.js": "/crazy-panda-rgb-slider/static/js/3.50524956.chunk.js",
+    "static/js/3.50524956.chunk.js.map": "/crazy-panda-rgb-slider/static/js/3.50524956.chunk.js.map",
+    "index.html": "/crazy-panda-rgb-slider/index.html",
+    "static/css/main.4eab7ba3.chunk.css.map": "/crazy-panda-rgb-slider/static/css/main.4eab7ba3.chunk.css.map",
+    "static/js/2.461deea2.chunk.js.LICENSE.txt": "/crazy-panda-rgb-slider/static/js/2.461deea2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f475f25.js",
+    "static/js/2.461deea2.chunk.js",
+    "static/css/main.4eab7ba3.chunk.css",
+    "static/js/main.ab4797f7.chunk.js"
+  ]
+}
