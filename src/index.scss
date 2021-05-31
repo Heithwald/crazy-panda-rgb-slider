@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  height: 600px;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-picker-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+/* Скроем сами radio-кнопки */
+.radio-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-toolbar {
+  display: flex;
+  align-items: center;
+  border: 3px solid #c4003e;
+  padding: 17px;
+  // Стилизуем рамку
+  border-radius: 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+
+  .radio-toolbar__legend {
+    display: flex;
+    padding: 10px;
+    color: #fff;
+    background: #101820;
+    text-transform: uppercase;
+  }
+
+  .toggle-button__label,
+  .hex {
+    display: flex;
+    padding: 10px;
+    font-size: 3rem;
+    color: #101820;
+    text-transform: uppercase;
+    text-underline-offset: 10px;
+  }
+  .hex {
+    width: 200px;
+  }
+}
+
+// Стили для выбранной кнопки
+input[type="radio"]:checked + .toggle-button__label {
+  text-decoration: underline dashed;
+}
+
+.text-and-toggles {
+  display: flex;
+  margin-top: 25px;
+}
+
+.color-picker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 25px;
+}
+
+/* Уберём дефолтные стили слайдера */
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &::-ms-track {
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+/* И добавим новые */
+.input-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  .label-color,
+  .label_color-value {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .label_color-value {
+    margin-left: 10px;
+  }
+  // Cтили элементов слайдеров
+  .slider {
+    display: flex;
+    margin: 10px 0;
+    // Ползунки
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      display: flex;
+      height: 20px;
+      width: 20px;
+      margin: -6px 0 0 0;
+      border: 1px solid #101820;
+      border-radius: 50%;
+      box-shadow: 1px 1px 1px #101820, 0px 0px 1px #121a23;
+      background: #ffffff;
+      cursor: pointer;
+    }
+    // Полосы
+    &::-webkit-slider-runnable-track {
+      height: 10px;
+      cursor: pointer;
+      box-shadow: 1px 1px 1px #101820, 0px 0px 1px #121a23;
+      border-radius: 10px;
+      border: 1px solid #101820;
+    }
+    // Заливки для полос
+    &#red::-webkit-slider-runnable-track {
+      background: #f00;
+    }
+    &#green::-webkit-slider-runnable-track {
+      background: #0f0;
+    }
+    &#blue::-webkit-slider-runnable-track {
+      background: #00f;
+    }
+  }
+}
+
+.text-field {
+  display: flex;
+  text-align: center;
+  padding: 25px;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  // Стилизуем рамку
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+  border: dashed 3px #c4003e;
+}
