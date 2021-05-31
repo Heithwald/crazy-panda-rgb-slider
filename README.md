@@ -1,4 +1,4 @@
-# React RGB slider test task implementation for Crazy Panda
+# React RGB slider implementation for Crazy Panda
 
 ### Компонент поддерживает:
 
